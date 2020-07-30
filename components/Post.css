@@ -39,6 +39,10 @@
     height: 100%;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -46,4 +50,6 @@
     margin-top: 4px;
     font-size: 1.1rem;
     max-height: 73px;
+    line-height: 1.4rem;
+    color: #495057;
 }

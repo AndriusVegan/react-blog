@@ -5,7 +5,7 @@ function Post(id, post) {
     return (
         <div className='post'>
             <div className='post__card'>
-                <img src={post.imageUrl} alt={post.caption} />
+                <img className='post_image' src={post.imageUrl} alt={post.caption} />
 
             </div>
 
