@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+}
+
+div {
+    /* border: 1px solid green; */
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.title {
+    width: fit-content;
+    text-align: center;
+    margin: 0, auto;
+}
+
+.content {
+    width: 70vw;
+    margin: 0, auto;
+    /* to center div content */
+    display: flex;
+}
+
+.img-container {
+    width: 30%;
+}
+.list {
+    width: 70%;
+    margin: auto, 0;
+    /* vertical center */
+    padding: 30px
+}
+
+img {
+width: 100%;
+}
+
+#imgage {
+    border: 50%;
+    overflow: hidden;
+    margin: 20px
+}
