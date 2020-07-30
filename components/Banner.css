@@ -5,11 +5,13 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-image: url(../assets/vegan-cover-mage.png);
+    background-image: url(../assets/vegan_logo.png);
     object-fit: contain;
     z-index: 1;
     background-size: cover;
     background-position: center;
+
+    font-family: 'Rowdies', 'cursive';
 }
 
 .banner::before{
@@ -20,25 +22,36 @@
     left: 0;
     top: 0;
     background: rgba (0, 0, 0 .25);
+    z-index: 2;
 
 }
 
-.banner__profile{
+.banner__profileImg{
+    background-image: url(../assets/aj_profile.jpg);
     border-radius: 12px;
-    z-index: 2;
+    z-index: 100;
     width:150px;
+    height: 150px;
     background-position: center;
     background-size: cover;
+    border: 5px solid black;
 
 }
 
 .banner__textContainer{
+  
     position: sticky;
+    bottom: 30px;
+
 
 }
 
-.banner__name{
+.banner__nameContainer{
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 20px;
     
+}
+.banner__greeting{
+    font-size: 20px;
 }

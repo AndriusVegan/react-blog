@@ -11,8 +11,12 @@ function Post(id, post) {
 
             <div className='post__content'> 
                 <div className='post__caption'> 
-                <div className='post__text'></div>
-                 </div>
+                    <h1>{post.caption}</h1>
+                </div>
+                <div className='post__text'>
+                    {post.text}
+                </div>
+                
             </div>
             
         </div>

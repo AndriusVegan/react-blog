@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import './App.css';
-import Banner from './Banner';
+import Banner from './components/Banner';
 import { db } from './firebase';
-import Post from './Post'
+import Post from '../components/Post'
 
 function App() {
-  const [posts, setPost] = useState([])
+  const [post, setPost] = useState([])
 
   useEffect(() => {
    db.collection('posts').orderBy('timestap', 'desc').onSnapshot(snapshot=>{
@@ -23,12 +23,13 @@ function App() {
     <Banner />
     <Banner />
     <hr></hr>
-    <div className='app__poastContainer'>
-      {posts.map({id, post}) =>{
-        
-      }
-      <Post postid />
-      }
+    <div className='app__postContainer'>
+    {post.map(({id, post})=> (
+      <Post postId={id} post={post} />
+    )
+    
+    )}
+
 
      </div>
 
