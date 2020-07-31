@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
-import firebase from 'firebase';
+// import firebase from 'firebase';
 import Banner from './components/Banner';
 import { db } from './firebase';
 import Post from './components/Post';
